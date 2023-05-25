@@ -1,0 +1,15 @@
+Cost = 0
+n = int(input('Введите количество билетов: '))
+for age in range(n):
+    age = int(input('Введите возраст: '))
+    if age < 18:
+      Cost = Cost
+    elif 18 <= age <= 25:
+      Cost += 990
+    elif age > 25:
+      Cost += 1390
+if n > 3:
+   Sum = Cost * 0.9
+else:
+   Sum = Cost
+print('Сумма к оплате:', '%d' % Sum, 'руб.')
